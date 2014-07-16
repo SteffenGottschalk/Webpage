@@ -58,6 +58,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="wwwroot\angular\" />
+    <Folder Include="wwwroot\scrollSite\fonts\" />
+    <Folder Include="wwwroot\scrollSite\images\" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -87,6 +90,10 @@
     <Content Include="wwwroot\darft\MasterHtml5Template.txt" />
     <Content Include="wwwroot\darft\RessLoad.html" />
     <Content Include="wwwroot\index.html" />
+    <Content Include="wwwroot\scrollSite\css\Style.css" />
+    <Content Include="wwwroot\scrollSite\index.html" />
+    <Content Include="wwwroot\scrollSite\scripts\jquery.js" />
+    <Content Include="wwwroot\scrollSite\scripts\scripts.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="My Project\AssemblyInfo.vb" />
