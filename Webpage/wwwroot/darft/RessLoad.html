@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+<meta charset="UTF-8">
+ <title>Title of the document</title>
+	
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ 
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+ 
+	<script>
+	$(document).ready(function(){
+	  $("button").click(function(){
+			var url = $('#webpageurl').val();
+			$("#webpageframe").attr("src", url);
+	  }); 
+	  
+	  $('#webpageurl').keypress(function(event){
+			var keycode = (event.keyCode ? event.keyCode : event.which);
+			if(keycode == '8' ||keycode == '9' ||keycode == '13'){
+				var url = $('#webpageurl').val();
+				$("#webpageframe").attr("src", url);
+			}
+		}); 
+		
+		$("#drop").change(function () {
+			var end = this.value;
+			var firstDropVal = $('#pick').val();
+		});
+		
+		$("#Resolution").change(function () {
+			var _resolution = this.value;
+			
+			switch (_resolution) { 
+				case 'FullHD': 
+					changeResolution(1920, 1080);
+					break;
+				case 'HD': 
+					changeResolution(1280, 720);
+					break;
+				case 'WUXGA': 
+					changeResolution(1920, 1200);
+					break;      
+				case '1024': 
+					changeResolution(1024, 768);
+					break;					
+				case 'iPhone_portrait': 
+					changeResolution(320,480);
+					break;
+				case 'iPhone_landscape': 
+					changeResolution( 480, 320);
+					break;
+				case 'iPhone_g4_portrait': 
+					changeResolution(640, 960);
+					break;
+				case 'iPhone_g4_landscape': 
+					changeResolution( 960, 640);
+					break;
+				case 'iPhone_g5_portrait': 
+					changeResolution(640, 1136);
+					break;
+				case 'iPhone_g5_landscape': 
+					changeResolution(1136, 640);
+					break;
+					
+					
+									case 'WXGA': 
+					changeResolution(1366, 768);
+					break;	
+									case '1680': 
+					changeResolution(1680, 1050);
+					break;	
+
+					
+					
+					
+					
+				default:
+					changeResolution(1920, 768);
+					break;
+			}
+		});
+		
+		function changeResolution(wi, hi){
+			$("#webpageframe").attr("width", wi);
+			$("#webpageframe").attr("height", hi);
+		  }
+	
+	});
+
+	</script>
+ <style>
+ /* html5doctor.com Reset v1.6.1 - http://cssreset.com */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+ 
+ html, body{
+ height:100%;
+ background-color: #222222;
+ }
+ 
+ input, select{
+ margin-top: 5px;
+  margin-left: 5px;
+ }
+ iframe{
+ margin: 200px;
+ background-color: white;
+
+ }
+ 
+ 
+ #a{
+ 
+ }
+ 
+ .content{
+ width: 1980px;
+ margin: 0px auto;
+ overflow:auto;
+ padding:70px 5px 70px 50px;
+ }
+ 
+ .item{
+ width: 245px;
+ height: 245px;
+ margin: 5px;
+ background-color: grey;
+ min-width:150px;
+ float: left;
+ }
+ 
+ header{
+ position: fixed;
+ top: 0px;
+ height: 70px;
+ background-color: #222222;
+ width:100%;
+ }
+ footer{
+ height: 70px;
+ background-color: grey;
+ position:absolute;
+    bottom: 0;
+    width: 100%;
+	visibility: hidden;
+	height: 0px;
+ }
+ </style>
+ 
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+ 
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#stieURL").keyup(function(){
+        alert($(this).val());
+
+$('#siteFrame').attr('src', $(this).val());
+    });
+
+})
+</script>
+
+ </head>
+
+ <body>
+ <header>
+ <input id="webpageurl" value="http://stage.intuity.de"></input>
+<!--<button>Change href Value</button>-->
+
+<select id="Resolution">
+    <option value="FullHD">Full HD - 1920x1080 (16:9)</option>
+    <option value="HD">HD - 1280x720 (16:10)</option>
+	<option value="WUXGA">WUXGA - 1920x1200 (16:10)</option>
+    <option value="1024">1024x768 (4:3)</option>
+	<option value="WXGA">WXGA - 1366 × 768</option>
+	<option value="1680">1680 × 1050)</option>
+	
+		<option value="iPhone_portrait">iPhone g3 portrait - 320x480</option>
+	<option value="iPhone_landscape">iPhone g3 landscape - 480x320</option>
+	<option value="iPhone_g4_portrait">iPhone g4 portrait - 640×960</option>
+	<option value="iPhone_g4_landscape">iPhone g4 landscape - 960x640</option>
+	<option value="iPhone_g5_portrait">iPhone g5 portrait - 640x1136</option>
+	<option value="iPhone_g5_landscape">iPhone g5 landscape - 1136×640</option>
+</select>
+ </header>
+ <div> 
+
+
+	<iframe id="webpageframe" src="http://stage.intuity.de" width="1920" height="1080" frameBorder="0" ></iframe> 
+
+</div>
+ <footer>footer</footer>
+</body>
+
+ </html> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
