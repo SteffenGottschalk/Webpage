@@ -87,6 +87,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
+    <Content Include="wwwroot\AssetsStartseite\base.js" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\nettoot-bold-webfont.svg" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\nettoot-light-webfont.svg" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\nettoot-webfont.svg" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\netto\nettoot-bold-webfont.svg" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\netto\nettoot-light-webfont.svg" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\netto\nettoot-webfont.svg" />
+    <Content Include="wwwroot\AssetsStartseite\jquery.js" />
+    <Content Include="wwwroot\AssetsStartseite\style.css" />
     <Content Include="wwwroot\darft\MasterHtml5Template.txt" />
     <Content Include="wwwroot\darft\RessLoad.html" />
     <Content Include="wwwroot\index.html" />
@@ -141,6 +150,56 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="wwwroot\darft\getMetadata.php" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-sans\MuseoSans_100.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-sans\MuseoSans_100Italic.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-sans\MuseoSans_300.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-sans\MuseoSans_300Italic.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-sans\MuseoSans_500.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-sans\MuseoSans_500Italic.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-sans\MuseoSans_700.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-sans\MuseoSans_700Italic.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-sans\MuseoSans_900.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-sans\MuseoSans_900Italic.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-slab\Museo_Slab_100.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-slab\Museo_Slab_1000.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-slab\Museo_Slab_1000italic.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-slab\Museo_Slab_100italic.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-slab\Museo_Slab_300.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-slab\Museo_Slab_300italic.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-slab\Museo_Slab_500.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-slab\Museo_Slab_500italic.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-slab\Museo_Slab_700.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-slab\Museo_Slab_700italic.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-slab\Museo_Slab_900.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\museo-slab\Museo_Slab_900italic.otf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\nettoot-bold-webfont.eot" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\nettoot-bold-webfont.ttf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\nettoot-bold-webfont.woff" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\nettoot-light-webfont.eot" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\nettoot-light-webfont.ttf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\nettoot-light-webfont.woff" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\nettoot-webfont.eot" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\nettoot-webfont.ttf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\nettoot-webfont.woff" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\netto\nettoot-bold-webfont.eot" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\netto\nettoot-bold-webfont.ttf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\netto\nettoot-bold-webfont.woff" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\netto\nettoot-light-webfont.eot" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\netto\nettoot-light-webfont.ttf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\netto\nettoot-light-webfont.woff" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\netto\nettoot-webfont.eot" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\netto\nettoot-webfont.ttf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\netto\nettoot-webfont.woff" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\open-sans\OpenSans-Bold.ttf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\open-sans\OpenSans-BoldItalic.ttf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\open-sans\OpenSans-ExtraBold.ttf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\open-sans\OpenSans-ExtraBoldItalic.ttf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\open-sans\OpenSans-Italic.ttf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\open-sans\OpenSans-Light.ttf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\open-sans\OpenSans-LightItalic.ttf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\open-sans\OpenSans-Regular.ttf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\open-sans\OpenSans-Semibold.ttf" />
+    <Content Include="wwwroot\AssetsStartseite\fonts\open-sans\OpenSans-SemiboldItalic.ttf" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
